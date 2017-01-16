@@ -1,0 +1,45 @@
+.container {
+    perspective: 900px;
+    margin: 80px;
+}
+
+.cube {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform: rotateX(90deg);
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% -150px;
+}
+
+.cube__edge {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    background: rgba(0,0,0,0.5);
+    font-size: 32px;
+    color: #fff;
+    position: absolute;
+    transform-origin: 50% 50% -150px;
+}
+
+.cube__edge--2 {
+    transform: rotateY(90deg);
+}
+
+.cube__edge--3 {
+    transform: rotateY(-90deg);
+}
+
+.cube__edge--4 {
+    transform: rotateX(90deg);
+}
+
+.cube__edge--5 {
+    transform: rotateX(-90deg);
+}
+
+.cube__edge--6 {
+    transform: rotateY(180deg);
+}
