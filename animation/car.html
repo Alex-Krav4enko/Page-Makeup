@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CarAnimation</title>
+    <style>
+        .block, body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .block {
+            background-image: url(bg.jpg);
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+        @keyframes car {
+            0% {left: 0;}
+            67% {left: 100%;}
+            100%{left: 50%;}
+        }
+        .car {
+            position: absolute;
+            bottom: 0;
+            height: 200px;
+            width: 200px;
+            background-image: url(auto.png);
+            background-size: cover;
+            animation: car 8s linear;
+            animation-delay: 2s;
+        }
+        .car:hover {    
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="car"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskAnimation</title>
+    <style>
+    .task {
+        width: 300px;
+        margin: 100px auto;
+        text-align: center;
+    }
+     .task_2 {
+        width: 100%;
+        margin: 100px auto;
+        text-align: center;
+    }
+    .button {
+        width: 100px; 
+        margin-top: 20px;
+        border-radius: 5px; 
+        font: normal 18px/40px Arial; 
+        color:#fff; 
+        border-width: 0;
+        background-color: #ffde0c;
+        transition: background-color 2s linear;
+    }
+    .button:hover {
+        background-color: #00ad5d;
+    }  
+    .button:active {
+        background-color: #6b3a00;
+    }  
+    .block {
+        width: 20%;
+        height: 150px;
+        background-color: #00ad5d;
+        position: relative;
+        left: -16%;
+        transition: left 0.3s ease;
+    }
+    .block:hover {
+        left: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="task">
+        <h2>Задание 1</h2>
+        <button class="button" type="submit">Sign in</button>
+    </div>
+    
+    <div class="task task_2">
+        <h2>Задание 2</h2>
+        <div class="block"></div>
+    </div>
+</body>
+</html>
