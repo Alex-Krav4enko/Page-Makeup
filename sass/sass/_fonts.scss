@@ -1,0 +1,39 @@
+/*font*/
+
+$Raleway_ExtraLight: 'Raleway ExtraLight', arial;
+$Open_Sans_Bold: 'Open Sans Bold', arial;
+$Open_Sans: 'Open Sans', arial;
+$Open_Sans_Italic: 'Open Sans Italic', arial;
+$Raleway_ExtraLight: 'Raleway ExtraLight', arial;
+
+@mixin font ($font-family, $font-size, $color) {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $color;
+}
+
+.title {
+    @include font ($Raleway_ExtraLight, 36px, #212121);
+    text-transform: uppercase;
+    &_download {
+        color: #fff;
+    }
+}
+
+.caption {
+    @include font ($Open_Sans_Bold, 20px, #333);
+}
+
+.text {
+    @include font ($Open_Sans, 14px, #86878b);
+    &_costumers {
+        font-family: $Open_Sans_Italic;
+    }
+    &_button {
+        color: #fff;
+    }
+}
+
+.text2 {
+    @include font ($Raleway_ExtraLight, 16px, #fff);
+}

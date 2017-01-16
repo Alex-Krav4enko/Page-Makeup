@@ -1,0 +1,11 @@
+/*body*/
+
+.body {
+    margin: 0;
+    padding: 0;
+    &__wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
