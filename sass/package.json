@@ -1,0 +1,14 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "sass compile",
+  "main": "index.html",
+  "scripts": {
+    "compile-sass": "./node_modules/.bin/node-sass -w sass/style.scss styles.css",
+  },
+  "author": "Alex Kravchenko",
+  "license": "",
+  "devDependencies": {
+    "node-sass": "^3.10.1"
+  }
+}
